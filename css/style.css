@@ -2,8 +2,8 @@
 for now, you can leave these alone */
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 1;
+    padding: 1;
     box-sizing: border-box;
 }
 
@@ -12,8 +12,45 @@ go ahead and play with these, can you get the colors to change? What do you noti
  */
 
 body {
-
-    color: #000000;
-    background-color: #F2F0D8;
+	background-color: #ffffff;
+	color: #000000;
+	font-family: "futura-pt", sans-serif;
 }
 
+header {
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap; /* this wraps for mobile or other formats*/
+	/* justify-content: space-between; */
+	/* padding: 1%; */
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 40%;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	margin-inline-start: auto;
+}
+
+a {
+	text-decoration: none;
+	color: #ff7700;
+	/* text-shadow: 1px 1px #0d0d0d; */
+	font-size: 18px;
+	padding-inline: 2%;
+	transition-duration: 100ms;
+}
+
+a:hover {
+	text-decoration: none;
+	background-color: #ff7700;
+	transition-duration: 100ms;
+	transition-delay: 10ms;
+	color: #ffffff;
+}
